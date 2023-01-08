@@ -2,13 +2,6 @@ from aiogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 # data for thirds keyboards
 
-data_cocktails = [['Шырын қосылған ABSOLUTE ◇ 2000₸', 'ABSOLUT c соком ◇ 2000₸',
-                   'ABSOLUT with juice ◇ 2000₸', 'absolut_j'],
-                  ['Шырын қосылған JAMESON ◇ 2000₸', 'JAMESON с соком ◇ 2000₸',
-                   'JAMESON with juice ◇ 2000₸', 'jamison_j'],
-                  ['Джин және тоник ◇ 2000₸', 'ДЖИН ТОНUК ◇ 2000₸', 'Gin and tonic ◇ 2000₸', 'gin_ton'],
-                  ['Жалбыз содасы бар ром 🥃 2000₸', 'РОМ с мятной содовой 🥃 2000₸',
-                   'Rum with mint soda 🥃 2000₸', 'rom_soda'], ]
 
 data_tinctures = [['Шие 🍒 1500₸', 'Вишня 🍒 1500₸', 'Cherry 🍒 1500₸', 'cherry'],
                   ['Қарақат ◇ 1500₸', 'Смородина ◇ 1500₸', 'Currant ◇ 1500₸', 'currant'],
@@ -50,43 +43,6 @@ data_soki = [['Алма 🍎 1000₸', 'Яблоко 🍎 1000₸', 'Apple 🍎 
 # ______________________________________________________
 # for data_cocktails
 # ______________________________________________________
-list_co_kz = [x for list_i in data_cocktails for x in list_i if x == list_i[0]]
-list_co_ru = [x for list_i in data_cocktails for x in list_i if x == list_i[1]]
-list_co_eng = [x for list_i in data_cocktails for x in list_i if x == list_i[2]]
-list_co_callback = [x for list_i in data_cocktails for x in list_i if x == list_i[3]]
-# end_names = ['kz', 'ru', 'eng']
-
-btn_co_kz_1 = InlineKeyboardButton(text=list_co_kz[0], callback_data=list_co_callback[0])
-btn_co_kz_2 = InlineKeyboardButton(text=list_co_kz[1], callback_data=list_co_callback[1])
-btn_co_kz_3 = InlineKeyboardButton(text=list_co_kz[2], callback_data=list_co_callback[2])
-btn_co_kz_4 = InlineKeyboardButton(text=list_co_kz[3], callback_data=list_co_callback[3])
-btns_co_kz = [btn_co_kz_1, btn_co_kz_2, btn_co_kz_3, btn_co_kz_4]
-keyboard_co_kz = InlineKeyboardMarkup()
-for row_btn in btns_co_kz:
-    keyboard_co_kz.row(row_btn)
-# -------------
-btn_co_ru_1 = InlineKeyboardButton(text=list_co_ru[0], callback_data=list_co_callback[0])
-btn_co_ru_2 = InlineKeyboardButton(text=list_co_ru[1], callback_data=list_co_callback[1])
-btn_co_ru_3 = InlineKeyboardButton(text=list_co_ru[2], callback_data=list_co_callback[2])
-btn_co_ru_4 = InlineKeyboardButton(text=list_co_ru[3], callback_data=list_co_callback[3])
-btns_co_ru = [btn_co_ru_1, btn_co_ru_2, btn_co_ru_3, btn_co_ru_4]
-keyboard_co_ru = InlineKeyboardMarkup()
-for row_btn in btns_co_ru:
-    keyboard_co_ru.row(row_btn)
-# -------------
-btn_co_eng_1 = InlineKeyboardButton(text=list_co_eng[0], callback_data=list_co_callback[0])
-btn_co_eng_2 = InlineKeyboardButton(text=list_co_eng[1], callback_data=list_co_callback[1])
-btn_co_eng_3 = InlineKeyboardButton(text=list_co_eng[2], callback_data=list_co_callback[2])
-btn_co_eng_4 = InlineKeyboardButton(text=list_co_eng[3], callback_data=list_co_callback[3])
-btns_co_eng = [btn_co_eng_1, btn_co_eng_2, btn_co_eng_3, btn_co_eng_4]
-keyboard_co_eng = InlineKeyboardMarkup()
-for row_btn in btns_co_eng:
-    keyboard_co_eng.row(row_btn)
-
-# for i, end_name in enumerate(end_names):
-#     for j, name in enumerate(data_cocktails):
-#         exec(f"btn_co_{i}_{end_names[i]} =  InlineKeyboardButton(text='{name[i]}', callback_data='{end_name}_{i}')")
-#         exec(f"keyboard_co_{end_name} = InlineKeyboardMarkup().add(btn_co_{i}_{end_names[i]})")
 
 # ______________________________________________________
 # for data_tinctures
