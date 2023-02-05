@@ -1,7 +1,7 @@
 from aiogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
-from stand_by_club_bot.standby_aiogram.menu.menu import menu
-from stand_by_club_bot.standby_aiogram.menu.models import MenuItem, MultiLangText
+from menu.menu import menu
+from menu.models import MenuItem, MultiLangText
 
 
 def _create_button(menu_item: MenuItem, lang) -> InlineKeyboardButton:

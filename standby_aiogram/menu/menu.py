@@ -1,6 +1,6 @@
-from stand_by_club_bot.standby_aiogram.menu.cocktails import all_cocktails
-from stand_by_club_bot.standby_aiogram.menu.models import Menu, MenuCategory, MultiLangText
-from stand_by_club_bot.standby_aiogram.menu.tinctures import all_tinctures
+from menu.cocktails import all_cocktails
+from menu.models import Menu, MenuCategory, MultiLangText
+from menu.tinctures import all_tinctures
 
 menu = Menu(
     categories=[

@@ -1,4 +1,4 @@
-from stand_by_club_bot.standby_aiogram.menu.models import MenuItem, MultiLangText
+from menu.models import MenuItem, MultiLangText
 
 all_tinctures = [
     MenuItem(
